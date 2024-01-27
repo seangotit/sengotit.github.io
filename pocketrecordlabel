@@ -1,0 +1,82 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Virtual Music Label Platform</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Virtual Music Label</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#artist-discovery">Artist Discovery</a></li>
+            <li><a href="#music-production">Music Production</a></li>
+            <li><a href="#marketing-promotion">Marketing</a></li>
+            <li><a href="#distribution">Distribution</a></li>
+            <li><a href="#financial-management" role="button">Financial Management</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section id="artist-discovery">
+                <hgroup>
+                    <h2>Artist Discovery and Signing</h2>
+                    <h3>Analyze and Sign New Talents</h3>
+                </hgroup>
+                <p>Our platform reviews artist submissions, analyzes their potential, and manages contract details efficiently.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/featured/?music,artist" alt="Artist Discovery">
+                    <figcaption><a href="https://source.unsplash.com/featured/?music,artist" target="_blank">Image Source</a></figcaption>
+                </figure>
+            </section>
+            <!-- Additional sections for Music Production, Marketing, Distribution, and Financial Management -->
+        </div>
+    </main>
+    <!-- Subscription Section -->
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Stay Updated</h2>
+                    <h3>Subscribe for Latest Updates</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required />
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
+                    <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="container">
+        <small>
+            <a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a>
+        </small>
+    </footer>
+</body>
+</html>
